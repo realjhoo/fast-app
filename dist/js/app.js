@@ -1,7 +1,3 @@
-/*
-Determine what OTHER can be
-  Decide what days or times you can do OTHER
-  */
 import { injectPie } from "./PieGraph.js";
 import { injectBar } from "./BarGraph.js";
 // --------------------------------------------------------
@@ -22,10 +18,10 @@ function getCountdown() {
     let year = now.getFullYear();
     let month = now.getMonth();
     let date = now.getDate();
+    let hour = now.getHours();
     let currentTime = now.getTime();
     let countdownTime;
     let targetTime;
-    let hour = now.getHours();
     if (hour < 12) {
         // fasting until 12noon (12h) today
         targetTime = new Date(year, month, date, 12).getTime();
@@ -154,14 +150,22 @@ function setBarGraphs() {
     else {
         walkIndicator.style.background = "red";
     }
-    // other???
+    // other
+    let otherIndicator = document.querySelector(".other-indicator");
+    // who knows!
+    if (DOW === "Saturday" || DOW === "Sunday") {
+        otherIndicator.style.background = "green";
+    }
+    else {
+        otherIndicator.style.background = "red";
+    }
 }
 // --------------------------------------------------------
 function injectMarkup() {
     // inject markup
     injectPie();
     // these are inverted in the DOM because I'm dumb
-    injectBar("other-wrapper", "other-text", "other-indicator", "Other");
+    injectBar("other-wrapper", "other-text", "other-indicator", "Coffee");
     injectBar("walk-wrapper", "walk-text", "walk-indicator", "Walk");
     injectBar("sweets-wrapper", "sweets-text", "sweets-indicator", "Sweets");
 }
@@ -181,4 +185,3 @@ function main() {
 }
 // --------------------------------------------------------
 main();
-//# sourceMappingURL=app.js.map
