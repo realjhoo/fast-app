@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap");
 
+:root {
+  --bg-red: #ffa9a4;
+  --bg-green: #b1d1ad;
+}
+
 *,
 *::before,
 *::after {
@@ -30,7 +35,6 @@ header h1 {
 }
 
 .center-display {
-  background-color: red;
   position: absolute;
   left: 4.375rem;
   top: 4.375rem;
@@ -70,42 +74,32 @@ header h1 {
   transition: background 0.8s;
 }
 
-/* .pie-pieces:hover {
-  background-color: red;
-} */
-
 .first-watch {
-  background-color: grey;
   z-index: 1;
   transform: rotate(60deg);
 }
 
 .second-watch {
-  background-color: grey;
   z-index: 2;
   transform: rotate(120deg);
 }
 
 .third-watch {
-  background-color: grey;
   z-index: 3;
   transform: rotate(180deg);
 }
 
 .fourth-watch {
-  background-color: grey;
   z-index: 4;
   transform: rotate(240deg);
 }
 
 .fifth-watch {
-  background-color: lightgrey;
   z-index: 5;
   transform: rotate(300deg);
 }
 
 .sixth-watch {
-  background-color: lightgrey;
   z-index: 6;
   transform: rotate(-30deg);
 }

@@ -28,3 +28,4 @@ export function injectPie() {
     let app = document.querySelector(".app");
     app.innerHTML = pieMarkup;
 }
+//# sourceMappingURL=PieGraph.js.map

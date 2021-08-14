@@ -73,57 +73,57 @@ function setPieGraph() {
         secondWatch.style.background = "red";
         thirdWatch.style.background = "red";
         fourthWatch.style.background = "red";
-        fifthWatch.style.background = "lightgrey";
-        sixthWatch.style.background = "lightgrey";
+        fifthWatch.style.background = "var(--bg-green)";
+        sixthWatch.style.background = "var(--bg-green)";
         centerDisplay.style.background = "red";
     }
     else if (hour >= 0 && hour <= 3) {
         // console.log("2nd Watch", hour);
-        firstWatch.style.background = "grey";
+        firstWatch.style.background = "var(--bg-red)";
         secondWatch.style.background = "red";
         thirdWatch.style.background = "red";
         fourthWatch.style.background = "red";
-        fifthWatch.style.background = "lightgrey";
-        sixthWatch.style.background = "lightgrey";
+        fifthWatch.style.background = "var(--bg-green)";
+        sixthWatch.style.background = "var(--bg-green)";
         centerDisplay.style.background = "red";
     }
     else if (hour >= 4 && hour <= 7) {
         // console.log("3rd Watch", hour);
-        firstWatch.style.background = "grey";
-        secondWatch.style.background = "grey";
+        firstWatch.style.background = "var(--bg-red)";
+        secondWatch.style.background = "var(--bg-red)";
         thirdWatch.style.background = "red";
         fourthWatch.style.background = "red";
-        fifthWatch.style.background = "lightgrey";
-        sixthWatch.style.background = "lightgrey";
+        fifthWatch.style.background = "var(--bg-green)";
+        sixthWatch.style.background = "var(--bg-green)";
         centerDisplay.style.background = "red";
     }
     else if (hour >= 8 && hour <= 11) {
         // console.log("4th Watch", hour);
-        firstWatch.style.background = "grey";
-        secondWatch.style.background = "grey";
-        thirdWatch.style.background = "grey";
+        firstWatch.style.background = "var(--bg-red)";
+        secondWatch.style.background = "var(--bg-red)";
+        thirdWatch.style.background = "var(--bg-red)";
         fourthWatch.style.background = "red";
-        fifthWatch.style.background = "lightgrey";
-        sixthWatch.style.background = "lightgrey";
+        fifthWatch.style.background = "var(--bg-green)";
+        sixthWatch.style.background = "var(--bg-green)";
         centerDisplay.style.background = "red";
     }
     else if (hour >= 12 && hour <= 15) {
         // console.log("5th Watch", hour);
-        firstWatch.style.background = "grey";
-        secondWatch.style.background = "grey";
-        thirdWatch.style.background = "grey";
-        fourthWatch.style.background = "grey";
+        firstWatch.style.background = "var(--bg-red)";
+        secondWatch.style.background = "var(--bg-red)";
+        thirdWatch.style.background = "var(--bg-red)";
+        fourthWatch.style.background = "var(--bg-red)";
         fifthWatch.style.background = "green";
         sixthWatch.style.background = "green";
         centerDisplay.style.background = "green";
     }
     else if (hour >= 16 && hour < 20) {
         // console.log("6th Watch", hour);
-        firstWatch.style.background = "grey";
-        secondWatch.style.background = "grey";
-        thirdWatch.style.background = "grey";
-        fourthWatch.style.background = "grey";
-        fifthWatch.style.background = "lightgrey";
+        firstWatch.style.background = "var(--bg-red)";
+        secondWatch.style.background = "var(--bg-red)";
+        thirdWatch.style.background = "var(--bg-red)";
+        fourthWatch.style.background = "var(--bg-red)";
+        fifthWatch.style.background = "var(--bg-green)";
         sixthWatch.style.background = "green";
         centerDisplay.style.background = "green";
     }
@@ -185,3 +185,4 @@ function main() {
 }
 // --------------------------------------------------------
 main();
+//# sourceMappingURL=app.js.map

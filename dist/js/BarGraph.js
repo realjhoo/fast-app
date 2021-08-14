@@ -15,3 +15,4 @@ function insertAfter(referenceNode, newNode) {
         referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
     }
 }
+//# sourceMappingURL=BarGraph.js.map
